@@ -1,4 +1,3 @@
-// script.js
 const diceIcon = document.getElementById('dice-icon');
 const savedColor = localStorage.getItem('accent-color');
 
