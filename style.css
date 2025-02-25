@@ -9,7 +9,7 @@
         "wdth" 100;
 
     --primary-color: #0A0A0A; 
-    --secondary-color: #f6f6f6; 
+    --secondary-color: #fff; 
     --accent-color: #FF6B6B; 
     --transition-speed: 0.3s;
     --border-radius: 8px;
@@ -31,7 +31,9 @@ body {
     flex-direction: column;
     gap: 1em;
     color: var(--primary-color);
-    background-color: var(--secondary-color);
+    background:
+        radial-gradient(circle, rgba(0, 0, 0, 0.145) 10%, transparent 10%) 0 0 / 15px 15px,
+        white;
     padding: 2rem;
     min-height: 100vh;
     line-height: 1.6;
