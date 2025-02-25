@@ -1,0 +1,19 @@
+{
+    "meta": {
+      "title": "Bastien Grisvard - Backend Developer & Software Architect",
+      "description": "Portfolio of Bastien Grisvard - Backend Developer & Software Architect Apprentice passionate about code and studying software architecture"
+    },
+    "content": {
+      "greeting": "I'm",
+      "about": {
+        "developer": "👨‍💻 Backend Developer",
+        "apprentice": "🎓 Software Architect Apprentice",
+        "passionate": "💻 Passionate about code"
+      },
+      "links": {
+        "email": "Mail",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
+      }
+    }
+  }

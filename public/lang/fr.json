@@ -1,0 +1,19 @@
+{
+    "meta": {
+      "title": "Bastien Grisvard - Développeur Backend & Architecte Logiciel",
+      "description": "Portfolio de Bastien Grisvard - Développeur Backend et Apprenti Architecte Logiciel, passionné par le code et l'architecture logicielle"
+    },
+    "content": {
+     "greeting": "Je suis",
+      "about": {
+        "developer": "👨‍💻 Développeur Backend",
+        "apprentice": "🎓 Apprenti Architecte Logiciel",
+        "passionate": "💻 Passionné par le code"
+      },
+      "links": {
+        "email": "Email",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
+      }
+    }
+  }

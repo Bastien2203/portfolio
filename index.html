@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Bastien Grisvard - Backend Developer & Software Architect Apprentice passionate about code and studying software architecture">
+    <meta name="description" content="Backend Developer & Software Architect Apprentice passionate about code and studying software architecture">
     <meta name="keywords"
-        content="backend developer, software architect, portfolio, web development, code, grisvard, bastien, bastien grisvard, software, architecture, clean code">
+        content="backend developer, software architect, portfolio, web development, code, grisvard, bastien, bastien grisvard, software, architecture, clean code, architecte logiciel">
 
 
     <!-- Open Graph Tags  -->
     <meta property="og:title" content="Bastien Grisvard - Backend Developer & Software Architect">
+    <meta property="og:description" content="Backend Developer & Software Architect Apprentice passionate about code and studying software architecture">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bastiengrisvard.com/">
     <meta property="og:image" content="https://bastiengrisvard.com/og-image.png">
-    <meta property="og:description"
-        content="Portfolio of Bastien Grisvard - Backend Developer & Software Architect Apprentice  passionate about code and studying software architecture">
     <meta property="og:site_name" content="Bastien Grisvard Portfolio">
     <meta property="og:locale" content="en_US">
     <meta property="og:updated_time" content="__LAST_MODIFIED__">
@@ -55,7 +53,7 @@
 
     <header>
         <h1 class="title">
-            I'm
+            <i data-translate="content.greeting">I'm</i>
             <span>Bastien GRISVARD</span>
         </h1>
     </header>
@@ -63,31 +61,33 @@
     <section class="about" aria-labelledby="about-heading">
         <h2 id="about-heading" class="sr-only">About me</h2>
         <p class="description">
-            <span>👨‍💻 Backend Developer </span>
-            <span>🎓 Software Architect Apprentice</span>
-            <span>💻 Passionate about code</span>
+            <span data-translate="content.about.developer">👨‍💻 Backend Developer</span>
+            <span data-translate="content.about.apprentice">🎓 Software Architect Apprentice</span>
+            <span data-translate="content.about.passionate">💻 Passionate about code</span>
         </p>
     </section>
 
     <nav class="navigation" aria-labelledby="navigation-heading">
         <ul class="links">
-            <li><a 
-                title="Send email"
-                href="mailto:bastiengrisvard2203@gmail.com" aria-label="Send email">
-                    <img src="email.svg" alt="Email icon" loading="lazy" /> Mail
-                </a></li>
-            <li><a 
-                title="GitHub profile"
-                href="https://github.com/Bastien2203" aria-label="GitHub profile">
-                    <img src="github-mark.svg" alt="GitHub logo" loading="lazy" /> GitHub
-                </a></li>
-            <li><a 
-                title="LinkedIn profile"
-                href="https://www.linkedin.com/in/bastien-grisvard-b74379253/" aria-label="LinkedIn profile">
-                    <img src="linkedin.svg" alt="LinkedIn logo" loading="lazy" /> LinkedIn
-                </a></li>
+            <li><a href="mailto:bastiengrisvard2203@gmail.com" aria-label="Send email">
+                <img src="email.svg" alt="Email icon" loading="lazy" />
+                <span data-translate="content.links.email">Mail</span>
+            </a></li>
+            <li><a href="https://github.com/Bastien2203" aria-label="GitHub profile">
+                <img src="github-mark.svg" alt="GitHub logo" loading="lazy" />
+                <span data-translate="content.links.github">GitHub</span>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/bastien-grisvard-b74379253/" aria-label="LinkedIn profile">
+                <img src="linkedin.svg" alt="LinkedIn logo" loading="lazy" />
+                <span data-translate="content.links.linkedin">LinkedIn</span>
+            </a></li>
         </ul>
     </nav>
+
+    <div class="language-switcher">
+        <button data-lang="en">EN</button>
+        <button data-lang="fr">FR</button>
+      </div>
 
     <script src="script.js" defer></script>
 </body>
