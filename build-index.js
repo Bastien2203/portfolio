@@ -3,7 +3,7 @@ const path = require('path');
 const { JSDOM } = require('jsdom');
 
 const lang = process.argv[2] || 'en';
-const translations = JSON.parse(fs.readFileSync(path.join(__dirname, 'lang', `${lang}.json`), 'utf8');
+const translations = JSON.parse(fs.readFileSync(path.join(__dirname, 'lang', `${lang}.json`), 'utf8'));
 const templateFile = path.join(__dirname, 'dist', lang, 'index.html');
 const outputFile = templateFile;
 
