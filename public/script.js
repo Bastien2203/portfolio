@@ -33,36 +33,6 @@ function getRandomColor() {
     return colors[Math.floor(Math.random() * colors.length)];
 }
 
-async function loadLanguage(lang) {
-    const response = await fetch(`/lang/${lang}.json`);
-    const translations = await response.json();
-    
-    document.documentElement.lang = lang;
-    document.title = translations.meta.title;
-    document.querySelector('meta[name="description"]').setAttribute('content', translations.meta.description);
-    document.querySelector('meta[property="og:title"]').setAttribute('content', translations.meta.title);
-    document.querySelector('meta[property="og:description"]').setAttribute('content', translations.meta.description);
-    document.querySelector('meta[property="og:locale"]').setAttribute('content', `${lang}_${lang.toUpperCase()}`);
-
-
-    document.querySelectorAll('[data-translate]').forEach(el => {
-        const keys = el.dataset.translate.split('.');
-        let value = translations;
-        keys.forEach(key => value = value[key]);
-        el.textContent = value;
-      });
-  
-    localStorage.setItem('lang', lang);
-    document.querySelectorAll('.language-switcher button').forEach(btn => {
-        btn.classList.toggle('current', btn.dataset.lang === lang);
-    });
-  }
-  
-
-document.querySelectorAll('.language-switcher button').forEach(btn => {
-    btn.addEventListener('click', () => loadLanguage(btn.dataset.lang));
-});
-
 diceIcon.addEventListener('click', () => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         return;
@@ -94,11 +64,3 @@ diceIcon.addEventListener('click', () => {
         diceIcon.style.transform = '';
     }, 500);
 });
-
-const availableLangs = ['en', 'fr'];
-const currentLang = localStorage.getItem('lang') || navigator.language.slice(0,2) || 'en';
-if(availableLangs.includes(currentLang)){
-    loadLanguage(currentLang);
-} else {
-    loadLanguage('en');
-}

@@ -6,7 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "prebuild": "node update-seo.js",
-    "build": "vite build"
+    "build:en": "vite build --config vite.config.en.js && node build-index.js en",
+    "build:fr": "vite build --config vite.config.fr.js && node build-index.js fr",
+    "build": "npm run build:en && npm run build:fr"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +16,8 @@
   "description": "",
   "dependencies": {
     "vite": "^6.1.1"
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0"
   }
 }
