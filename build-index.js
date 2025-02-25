@@ -18,6 +18,7 @@ document.querySelector('meta[name="description"]').setAttribute('content', trans
 document.querySelector('meta[property="og:url"]').setAttribute('content', `https://bastiengrisvard.com/${lang}`);
 document.querySelector('meta[property="og:locale"]').setAttribute('content', lang === 'fr' ? 'fr_FR' : 'en_US');
 
+document.querySelector(".language-switcher a").setAttribute('class', lang === 'fr' ? 'current' : '');
 
 document.querySelectorAll('link[href], script[src], img[src]').forEach(el => {
   const attr = el.href ? 'href' : 'src';
