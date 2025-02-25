@@ -15,9 +15,12 @@ const { document } = dom.window;
 document.documentElement.lang = lang;
 document.title = translations.meta.title;
 document.querySelector('meta[name="description"]').setAttribute('content', translations.meta.description);
-document.querySelector('meta[name="canonical"]').setAttribute('content', `https://bastiengrisvard.com/${lang}`);
 document.querySelector('meta[property="og:url"]').setAttribute('content', `https://bastiengrisvard.com/${lang}`);
 document.querySelector('meta[property="og:locale"]').setAttribute('content', lang === 'fr' ? 'fr_FR' : 'en_US');
+
+document.querySelectorAll('link[rel="canonical"]').forEach(link => {
+  link.href = `https://bastiengrisvard.com/${lang}`;
+});
 
 
 // if a.hreflang = fr then a.class = current
