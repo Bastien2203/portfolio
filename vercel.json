@@ -4,11 +4,6 @@
       "source": "/",
       "destination": "/en",
       "permanent": true 
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/en",
-      "statusCode": 302
     }
   ],
   "rewrites": [
