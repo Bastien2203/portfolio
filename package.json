@@ -8,7 +8,8 @@
     "prebuild": "node update-seo.js",
     "build:en": "vite build --config vite.config.en.js && node build-index.js en",
     "build:fr": "vite build --config vite.config.fr.js && node build-index.js fr",
-    "build": "npm run build:en && npm run build:fr"
+    "build": "rm -rf dist && npm run build:en && npm run build:fr && cp -r public/* dist/",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
