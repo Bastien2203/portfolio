@@ -1,20 +1,38 @@
 {
-    "meta": {
-      "title": "Bastien Grisvard - Développeur Backend & Architecte Logiciel",
-      "description": "Portfolio de Bastien Grisvard - Développeur Backend et Apprenti Architecte Logiciel, passionné par le code et l'architecture logicielle",
-      "keywords": "développeur backend, architecte logiciel, portfolio, développement web, code, grisvard, bastien, bastien grisvard, logiciel, architecture, code propre, architecte logiciel"
+  "meta": {
+    "title": "Bastien Grisvard - Développeur - Apprenti Architecte Logiciel",
+    "description": "Portfolio de Bastien Grisvard - Développeur - Apprenti Architecte Logiciel passionné par le code et étudiant en architecture logicielle",
+    "keywords": "développeur, développeur backend, architecte logiciel, portfolio, développement web, code, grisvard, bastien, bastien grisvard, logiciel, architecture, clean code, software architect"
+  },
+  "content": {
+    "greeting": "Bonjour \uD83D\uDC4B, je suis",
+    "links": {
+      "email": "Mail",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
     },
-    "content": {
-     "greeting": "Je suis",
-      "about": {
-        "developer": "👨‍💻 Développeur Backend",
-        "apprentice": "🎓 Apprenti Architecte Logiciel",
-        "passionate": "💻 Passionné par le code"
+    "subtitle": "Apprenti Architecte Logiciel",
+    "bento": {
+      "aboutme": {
+        "title": "À propos de moi",
+        "content": "Je suis Bastien GRISVARD, apprenti Architecte Logiciel chez Raccourci Agency et actuellement en formation chez OpenClassrooms. Après avoir obtenu mon <strong>BUT Informatique</strong> (Développement d’Applications – Conception, Développement et Validation), j’ai choisi de me spécialiser dans la conception d’architectures logicielles robustes et évolutives."
       },
-      "links": {
-        "email": "Email",
-        "github": "GitHub",
-        "linkedin": "LinkedIn"
+      "currentjob": {
+        "title": "Poste actuel",
+        "content": "Apprenti Architecte Logiciel chez <a href=\"https://raccourci.fr\" target=\"_blank\" rel=\"noopener\">Raccourci Agency</a>, travaillant avec Kotlin (Ktor) et Elasticsearch."
+      },
+      "currentstudies": {
+        "title": "Études actuelles",
+        "content": "Je suis actuellement en formation d'Architecte Logiciel chez <a href=\"https://openclassrooms.com/fr/paths/749-architecte-logiciel\" target=\"_blank\" rel=\"noopener\">OpenClassrooms</a>."
+      },
+      "livingin": "Je vis à",
+      "funniestproject": "Mon projet le plus fun",
+      "favtech" : "Ma techno préférée ce mois-ci",
+      "currentproject": {
+        "title": "Projet en cours",
+        "content": "\uD83D\uDCE6 Développement d'une solution de stockage NoSQL légère auto-hébergée."
       }
-    }
+    },
+    "footer": "Made with ❤\uFE0F by Bastien GRISVARD - 2025"
   }
+}

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Backend Developer & Software Architect Apprentice passionate about code and studying software architecture">
+    <meta name="description"
+          content="Backend Developer & Software Architect Apprentice passionate about code and studying software architecture">
     <meta name="keywords"
-        content="backend developer, software architect, portfolio, web development, code, grisvard, bastien, bastien grisvard, software, architecture, clean code, architecte logiciel">
+          content="backend developer, software architect, portfolio, web development, code, grisvard, bastien, bastien grisvard, software, architecture, clean code, architecte logiciel">
     <meta property="og:title" content="Bastien Grisvard - Backend Developer & Software Architect">
-    <meta property="og:description" content="Backend Developer & Software Architect Apprentice passionate about code and studying software architecture">
+    <meta property="og:description"
+          content="Backend Developer & Software Architect Apprentice passionate about code and studying software architecture">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bastiengrisvard.com/">
     <meta property="og:image" content="https://bastiengrisvard.com/og-image.png">
@@ -16,15 +19,15 @@
     <meta property="og:updated_time" content="__LAST_MODIFIED__">
     <link rel="canonical" href="https://bastiengrisvard.com">
     <title>Bastien Grisvard - Backend Developer & Software Architect</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/bento-box.css">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@850&display=swap" as="style">
     <link rel="preload" href="email.svg" as="image" type="image/svg+xml">
     <link rel="preload" href="github-mark.svg" as="image" type="image/svg+xml">
     <link rel="preload" href="linkedin.svg" as="image" type="image/svg+xml">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E4KM5B0PXH"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-E4KM5B0PXH');</script>
+    <link rel="preload" href="bastien.jpeg" as="image" type="image/jpeg">
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -33,8 +36,8 @@
             "jobTitle": "Backend Developer & Software Architect Apprentice",
             "url": "https://bastiengrisvard.com",
             "sameAs": [
-            "https://github.com/Bastien2203",
-            "https://www.linkedin.com/in/bastien-grisvard-b74379253/"
+                "https://github.com/Bastien2203",
+                "https://www.linkedin.com/in/bastien-grisvard-b74379253/"
             ],
             "email": "mailto:bastiengrisvard2203@gmail.com",
             "image": "https://bastiengrisvard.com/og-image.jpg",
@@ -44,47 +47,146 @@
 </head>
 
 <body>
-    <button id="dice-icon" class="dice-icon" aria-label="Change color theme">🎲</button>
+<div class="language-switcher">
+    <a href="/en" hreflang="en">EN</a>
+    <a href="/fr" hreflang="fr">FR</a>
+</div>
+<main>
 
     <header>
         <h1 class="title">
-            <i data-translate="content.greeting">I'm</i>
+            <i data-translate="content.greeting">Hello 👋, I'm</i>
             <span>Bastien GRISVARD</span>
         </h1>
+
+        <h2 class="subtitle" data-translate="content.subtitle">Software Architect Apprentice</h2>
     </header>
 
-    <section class="about" aria-labelledby="about-heading">
-        <h2 id="about-heading" class="sr-only">About me</h2>
-        <p class="description">
-            <span data-translate="content.about.developer">👨‍💻 Backend Developer</span>
-            <span data-translate="content.about.apprentice">🎓 Software Architect Apprentice</span>
-            <span data-translate="content.about.passionate">💻 Passionate about code</span>
-        </p>
-    </section>
 
-    <nav class="navigation" aria-labelledby="navigation-heading">
-        <ul class="links">
-            <li><a href="mailto:bastiengrisvard2203@gmail.com" aria-label="Send email">
-                <img src="email.svg" alt="Email icon" loading="lazy" />
-                <span data-translate="content.links.email">Mail</span>
-            </a></li>
-            <li><a href="https://github.com/Bastien2203" aria-label="GitHub profile">
-                <img src="github-mark.svg" alt="GitHub logo" loading="lazy" />
-                <span data-translate="content.links.github">GitHub</span>
-            </a></li>
-            <li><a href="https://www.linkedin.com/in/bastien-grisvard-b74379253/" aria-label="LinkedIn profile">
-                <img src="linkedin.svg" alt="LinkedIn logo" loading="lazy" />
+    <div class="bento">
+
+        <!-- About me -->
+        <div class="box col-2">
+            <span class="box__title" data-translate="content.bento.aboutme.title">About Me</span>
+            <div class="box__content" data-translate="content.bento.aboutme.content">
+                I’m Bastien GRISVARD, a Software Architect Apprentice at Raccourci Agency and currently training at
+                OpenClassrooms.
+                After earning my <strong>BUT Informatique</strong> (Application Development – Design, Development, and
+                Validation), I chose to specialize in designing robust and scalable software architectures.
+            </div>
+        </div>
+
+        <!-- Picture -->
+        <div class="box">
+            <img class="box__content" src="bastien.jpeg" alt="Bastien Grisvard" loading="lazy"/>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="box">
+            <a class="box__content" target="_blank" href="https://www.linkedin.com/in/bastien-grisvard-b74379253/"
+               aria-label="LinkedIn profile">
+                <img src="linkedin.svg" alt="LinkedIn logo" loading="lazy"/>
                 <span data-translate="content.links.linkedin">LinkedIn</span>
-            </a></li>
-        </ul>
-    </nav>
+            </a>
+        </div>
 
-    <div class="language-switcher">
-        <a href="/en" hreflang="en">EN</a>
-        <a href="/fr" hreflang="fr">FR</a>
-      </div>
+        <!-- Current job -->
+        <div class="box col-2">
+            <span class="box__title" data-translate="content.bento.currentjob.title">
+                Current Job
+            </span>
+            <div class="box__content">
+                Sofware Architect Apprentice at <a href="https://raccourci.fr" target="_blank" rel="noopener">Raccourci
+                Agency</a>,
+                working with Kotlin (Ktor), and Elasticsearch.
+            </div>
+        </div>
 
-    <script src="script.js" defer></script>
+        <!-- Current studies -->
+        <div class="box col-2">
+            <span class="box__title" data-translate="content.bento.currentstudies.title">
+                Current Studies
+            </span>
+            <div class="box__content" data-translate="content.bento.currentstudies.content">
+                Software Architect Apprentice at <a href="https://openclassrooms.com/fr/paths/749-architecte-logiciel"
+                                                    target="_blank" rel="noopener">OpenClassrooms</a>.
+            </div>
+        </div>
+
+        <!-- Github -->
+        <div class="box">
+            <a class="box__content" target="_blank" href="https://github.com/Bastien2203" rel="noopener"
+               aria-label="GitHub profile">
+                <img src="github-mark.svg" alt="GitHub logo" loading="lazy"/>
+                <span data-translate="content.links.github">GitHub</span>
+            </a>
+        </div>
+
+        <!-- Mail -->
+        <div class="box">
+            <a class="box__content"
+               target="_blank"
+               title="bastiengrisvard2203@gmail.com"
+               href="mailto:bastiengrisvard2203@gmail.com"
+               rel="noopener"
+               aria-label="Send email">
+                <img src="email.svg" alt="Email icon" loading="lazy"/>
+                <span data-translate="content.links.email">Mail</span>
+            </a>
+        </div>
+
+        <!-- La Rochelle weather -->
+        <div class="box col-2">
+            <span class="box__title" data-translate="content.bento.livingin">Living in</span>
+            <iframe id="widget_autocomplete_preview"
+                    class="box__content"
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    src="https://meteofrance.com/widget/prevision/173000##3D6AA2"
+                    title="Prévisions La Rochelle par Météo-France"></iframe>
+        </div>
+
+        <!-- My funniest project -->
+        <div class="box">
+            <span class="box__title" data-translate="content.bento.funniestproject">
+                My funniest project
+            </span>
+            <div class="box__content flex-col-center gap-1">
+                <span>🖇️ <a href="https://react-ts-os.vercel.app" target="_blank" rel="noopener">React-TS-OS</a></span>
+                <a class="github-link" href="https://github.com/Bastien2203/react-ts-os">
+                    <img src="github-mark.svg" alt="GitHub logo" loading="lazy"/>
+                    Source code
+                </a>
+
+            </div>
+        </div>
+
+        <!-- My fav tech of the moment -->
+        <div class="box">
+            <span class="box__title" data-translate="content.bento.favtech">
+                My fav tech this month
+            </span>
+            <div class="box__content flex-col-center">
+                <img src="https://img.shields.io/badge/go-%2300ADD8.svg?logo=go&logoColor=white"
+                     alt="Golang" loading="lazy" width="40%"/>
+            </div>
+        </div>
+
+        <!-- My current project -->
+        <div class="box">
+            <span class="box__title" data-translate="content.bento.currentproject.title">Current Project</span>
+            <div class="box__content flex-col-center">
+                📦 Building a lightweight NoSQL storage solution for self-hosted.
+            </div>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <p data-translate="content.footer">
+        Made with ❤️ by Bastien GRISVARD - 2025
+    </p>
+</footer>
 </body>
-
 </html>

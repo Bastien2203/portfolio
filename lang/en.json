@@ -1,20 +1,38 @@
 {
-    "meta": {
-      "title": "Bastien Grisvard - Backend Developer & Software Architect",
-      "description": "Portfolio of Bastien Grisvard - Backend Developer & Software Architect Apprentice passionate about code and studying software architecture",
-      "keywords": "backend developer, software architect, portfolio, web development, code, grisvard, bastien, bastien grisvard, software, architecture, clean code, architecte logiciel"
+  "meta": {
+    "title": "Bastien Grisvard - Developer - Software Architect Apprentice",
+    "description": "Portfolio of Bastien Grisvard - Developer - Software Architect Apprentice passionate about code and studying software architecture",
+    "keywords": "developer ,backend developer, software architect, portfolio, web development, code, grisvard, bastien, bastien grisvard, software, architecture, clean code, architecte logiciel"
+  },
+  "content": {
+    "greeting": "Hello \uD83D\uDC4B, I'm",
+    "links": {
+      "email": "Mail",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
     },
-    "content": {
-      "greeting": "I'm",
-      "about": {
-        "developer": "👨‍💻 Backend Developer",
-        "apprentice": "🎓 Software Architect Apprentice",
-        "passionate": "💻 Passionate about code"
+    "subtitle": "Software Architect Apprentice",
+    "bento": {
+      "aboutme": {
+        "title": "About me",
+        "content": "I’m Bastien GRISVARD, a Software Architect Apprentice at Raccourci Agency and currently training at OpenClassrooms. After earning my <strong>BUT Informatique</strong> (Application Development – Design, Development, and Validation), I chose to specialize in designing robust and scalable software architectures."
       },
-      "links": {
-        "email": "Mail",
-        "github": "GitHub",
-        "linkedin": "LinkedIn"
+      "currentjob": {
+        "title": "Current job",
+        "content": "Sofware Architect Apprentice at <a href=\"https://raccourci.fr\" target=\"_blank\" rel=\"noopener\">Raccourci Agency</a>, working with Kotlin (Ktor), and Elasticsearch."
+      },
+      "currentstudies": {
+        "title": "Current studies",
+        "content": "I am currently studying Software Architecture at <a href=\"https://openclassrooms.com/fr/paths/749-architecte-logiciel\", target=\"_blank\" rel=\"noopener\">OpenClassrooms</a>."
+      },
+      "livingin": "Living in",
+      "funniestproject": "My Funniest project",
+      "favtech" : "My fav tech this month",
+      "currentproject" : {
+        "title": "Current project",
+        "content": "\uD83D\uDCE6 Building a lightweight NoSQL storage solution self-hosted."
       }
-    }
+    },
+    "footer": "Made with ❤\uFE0F by Bastien GRISVARD - 2025"
   }
+}
