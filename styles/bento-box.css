@@ -47,13 +47,28 @@
     font-weight: 500;
 }
 
-img.box__content {
-    padding: 0;
+.box__content {
+    color: var(--light-text);
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    border: 1px solid rgb(229, 229, 229);
+    flex: 1;
+    padding: 0.5em;
     overflow: clip;
-
 }
 
-iframe.box__content{
+
+.profile-picture{
+    padding: 0;
+}
+.profile-picture > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+iframe.box__content {
     padding: 0;
     overflow: clip;
 }
@@ -77,18 +92,6 @@ a.box__content img {
 
 }
 
-.box__content {
-    color: var(--light-text);
-    background-color: var(--secondary-color);
-    box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.1);
-    border-radius: 0.5em;
-    border: 1px solid rgb(229, 229, 229);
-    flex: 1;
-    padding: 0.5em;
-}
-
-
-
 
 @media screen and (max-width: 768px) {
     .bento {
@@ -101,11 +104,11 @@ a.box__content img {
         aspect-ratio: 1/1;
     }
 
-    .col-2{
+    .col-2 {
         grid-column: span 2;
     }
 
-    .row-2{
+    .row-2 {
         grid-row: span 2;
         aspect-ratio: 2/1 !important;
     }
