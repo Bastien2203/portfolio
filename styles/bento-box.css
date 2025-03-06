@@ -86,7 +86,6 @@ a.box__content img {
     border: 1px solid rgb(229, 229, 229);
     flex: 1;
     padding: 0.5em;
-    min-height: 100px;
 }
 
 
