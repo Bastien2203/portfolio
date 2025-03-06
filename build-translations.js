@@ -40,7 +40,7 @@ document.querySelectorAll('[data-translate]').forEach(el => {
   const keys = el.dataset.translate.split('.');
   let value = translations;
   keys.forEach(key => value = value?.[key]);
-  if (value) el.textContent = value;
+  if (value) el.innerHTML = value;
 });
 
 fs.writeFileSync(outputFile, dom.serialize());
