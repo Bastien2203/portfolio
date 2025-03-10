@@ -30,7 +30,7 @@
       "favtech" : "My fav tech this month",
       "currentproject" : {
         "title": "Current project",
-        "content": "\uD83D\uDCE6 Building a lightweight NoSQL storage solution self-hosted."
+        "content": "\uD83D\uDCE6 Building a self-hosted no code storage solution."
       }
     }
   }
