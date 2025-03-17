@@ -138,50 +138,14 @@
         </div>
 
         <!-- La Rochelle weather -->
-        <div class="box col-2">
+        <div class="box col-1">
             <span class="box__title" data-translate="content.bento.livingin">Living in</span>
-            <iframe id="widget_autocomplete_preview"
-                    class="box__content"
-                    width="100%"
-                    height="100%"
-                    frameborder="0"
-                    src="https://meteofrance.com/widget/prevision/173000##3D6AA2"
-                    title="Prévisions La Rochelle par Météo-France"></iframe>
-        </div>
-
-        <!-- My funniest project -->
-        <div class="box">
-            <span class="box__title" data-translate="content.bento.funniestproject">
-                My funniest project
-            </span>
             <div class="box__content flex-col-center gap-1">
-                <span>🖇️ <a href="https://react-ts-os.vercel.app" target="_blank" rel="noopener">React-TS-OS</a></span>
-                <a class="github-link" href="https://github.com/Bastien2203/react-ts-os">
-                    <img src="github-mark.svg" alt="GitHub logo" loading="lazy"/>
-                    Source code
-                </a>
-
+                La Rochelle
+            <div id="temperature"></div>
             </div>
         </div>
-
-        <!-- My fav tech of the moment -->
-        <div class="box">
-            <span class="box__title" data-translate="content.bento.favtech">
-                My fav tech this month
-            </span>
-            <div class="box__content flex-col-center">
-                <img src="https://img.shields.io/badge/go-%2300ADD8.svg?logo=go&logoColor=white"
-                     alt="Golang" loading="lazy" width="40%"/>
-            </div>
-        </div>
-
-        <!-- My current project -->
-        <div class="box">
-            <span class="box__title" data-translate="content.bento.currentproject.title">Current Project</span>
-            <div class="box__content flex-col-center" data-translate="content.bento.currentproject.content">
-                📦 Building a lightweight NoSQL storage solution for self-hosted.
-            </div>
-        </div>
+       
     </div>
 
 </main>
@@ -192,5 +156,11 @@
         - 2025
     </p>
 </footer>
+
+<script>
+    fetch("https://api.open-meteo.com/v1/forecast?latitude=46.166667&longitude=-1.150000&current=temperature_2m").then(res => res.json()).then(data => {
+        document.getElementById("temperature").innerText = "🌡️" + data.current.temperature_2m + "°C";
+    });
+</script>
 </body>
 </html>

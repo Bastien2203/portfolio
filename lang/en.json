@@ -25,13 +25,7 @@
         "title": "Current studies",
         "content": "I am currently studying Software Architecture at <a href=\"https://openclassrooms.com/fr/paths/749-architecte-logiciel\", target=\"_blank\" rel=\"noopener\">OpenClassrooms</a>."
       },
-      "livingin": "Living in",
-      "funniestproject": "My Funniest project",
-      "favtech" : "My fav tech this month",
-      "currentproject" : {
-        "title": "Current project",
-        "content": "\uD83D\uDCE6 Building a self-hosted no code storage solution."
-      }
+      "livingin": "Living in"
     }
   }
 }
