@@ -27,6 +27,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
     <link rel="preload" href="bastien.jpeg" as="image" type="image/jpeg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" as="style">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap">
     <script type="application/ld+json">
@@ -91,7 +94,7 @@
             <!-- Profile Picture -->
             <div class="bento-box profile-box">
                 <div class="box-content profile-picture">
-                    <img src="bastien.jpeg" alt="Bastien Grisvard" loading="lazy" />
+                    <img src="bastien.jpeg" alt="Bastien Grisvard" loading="lazy" decoding="async" />
                 </div>
             </div>
 
@@ -230,6 +233,7 @@
         themeToggle.addEventListener('click', () => {
             const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            themeToggle.setAttribute('aria-label', newTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
             setTheme(newTheme);
         });
         
