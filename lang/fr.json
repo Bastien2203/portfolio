@@ -25,7 +25,15 @@
         "title": "Études actuelles",
         "content": "Je suis actuellement en formation d'Architecte Logiciel chez <a href=\"https://openclassrooms.com/fr/paths/749-architecte-logiciel\" target=\"_blank\" rel=\"noopener\">OpenClassrooms</a>."
       },
-      "livingin": "Je vis à"
+      "livingin": "Je vis à",
+      "hardskills": {
+        "title": "Hard skills",
+        "content": "<span class=\"skill-tag\">Développement Backend (Ktor, Symfony, Golang)</span><span class=\"skill-tag\">Interrogation de données (SQL, ElasticSearch)</span><span class=\"skill-tag\">Développement Frontend (React JS, Vanilla JS)</span>"
+      },
+      "softskills": {
+        "title": "Soft skills",
+        "content": "<span class=\"skill-tag\">Travail d'équipe</span><span class=\"skill-tag\">Résolution de problèmes</span><span class=\"skill-tag\">Adaptabilité</span>"
+      }
     }
   }
 }

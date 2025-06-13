@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-          content="Backend Developer & Software Architect Apprentice passionate about code and studying software architecture">
+        content="Backend Developer & Software Architect Apprentice passionate about code and studying software architecture">
     <meta name="keywords"
-          content="backend developer, software architect, portfolio, web development, code, grisvard, bastien, bastien grisvard, software, architecture, clean code, architecte logiciel">
+        content="backend developer, software architect, portfolio, web development, code, grisvard, bastien, bastien grisvard, software, architecture, clean code, architecte logiciel">
     <meta property="og:title" content="Bastien Grisvard - Backend Developer & Software Architect">
     <meta property="og:description"
-          content="Backend Developer & Software Architect Apprentice passionate about code and studying software architecture">
+        content="Backend Developer & Software Architect Apprentice passionate about code and studying software architecture">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bastiengrisvard.com/">
     <meta property="og:image" content="https://bastiengrisvard.com/og-image.png">
@@ -19,17 +19,16 @@
     <meta property="og:updated_time" content="__LAST_MODIFIED__">
     <link rel="canonical" href="https://bastiengrisvard.com">
     <title>Bastien Grisvard - Backend Developer & Software Architect</title>
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/bento-box.css">
+    
+    <link rel="stylesheet" href="styles.css">
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@850&display=swap" as="style">
-    <link rel="preload" href="email.svg" as="image" type="image/svg+xml">
-    <link rel="preload" href="github-mark.svg" as="image" type="image/svg+xml">
-    <link rel="preload" href="linkedin.svg" as="image" type="image/svg+xml">
+
     <link rel="preload" href="bastien.jpeg" as="image" type="image/jpeg">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap">
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -46,123 +45,259 @@
             "description": "Backend Developer & Software Architect Apprentice passionate about code and studying software architecture"
         }
     </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
-<div class="language-switcher">
-    <a href="/en" hreflang="en">EN</a>
-    <a href="/fr" hreflang="fr">FR</a>
-</div>
-<main>
+    <nav class="navbar">
+        <div class="logo">BG</div>
+        <div class="language-switcher">
+            <a href="/en" hreflang="en" class="active">EN</a>
+            <a href="/fr" hreflang="fr">FR</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+            <i data-lucide="moon" class="theme-icon dark-icon"></i>
+            <i data-lucide="sun" class="theme-icon light-icon"></i>
+        </button>
+    </nav>
 
-    <header>
-        <h1 class="title">
-            <i data-translate="content.greeting">Hello 👋, I'm</i>
-            <span>Bastien GRISVARD</span>
-        </h1>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="title">
+                    <span class="greeting" data-translate="content.greeting">Hello 👋, I'm</span>
+                    <span class="name">Bastien GRISVARD</span>
+                </h1>
+                <h2 class="subtitle" data-translate="content.subtitle">Software Architect Apprentice</h2>
+            </div>
+        </section>
 
-        <h2 class="subtitle" data-translate="content.subtitle">Software Architect Apprentice</h2>
-    </header>
+        <div class="bento-grid">
+            <!-- About me -->
+            <div class="bento-box col-2">
+                <div class="box-header">
+                    <i data-lucide="code" class="icon purple-icon"></i>
+                    <span data-translate="content.bento.aboutme.title">About Me</span>
+                </div>
+                <div class="box-content" data-translate="content.bento.aboutme.content">
+                    I'm Bastien GRISVARD, a Software Architect Apprentice at Raccourci Agency and currently training at
+                    OpenClassrooms.
+                    After earning my <strong>BUT Informatique</strong> (Application Development – Design, Development,
+                    and
+                    Validation), I chose to specialize in designing robust and scalable software architectures.
+                </div>
+            </div>
+
+            <!-- Profile Picture -->
+            <div class="bento-box profile-box">
+                <div class="box-content profile-picture">
+                    <img src="bastien.jpeg" alt="Bastien Grisvard" loading="lazy" />
+                </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="bento-box social-box row-2">
+                <a class="box-content social-link" target="_blank"
+                    href="https://www.linkedin.com/in/bastien-grisvard-b74379253/" aria-label="LinkedIn profile">
+                    <i data-lucide="linkedin" class="social-icon"></i>
+                    <span data-translate="content.links.linkedin">LinkedIn</span>
+                </a>
+            </div>
+
+            <!-- Current job -->
+            <div class="bento-box col-2">
+                <div class="box-header">
+                    <i data-lucide="briefcase" class="icon blue-icon"></i>
+                    <span data-translate="content.bento.currentjob.title">
+                        Current Job
+                    </span>
+                </div>
+                <div class="box-content" data-translate="content.bento.currentjob.content">
+                    Software Architect Apprentice at <a href="https://raccourci.fr" target="_blank"
+                        rel="noopener">Raccourci
+                        Agency</a>,
+                    working with Kotlin (Ktor), and Elasticsearch.
+                </div>
+            </div>
+
+            <!-- Current studies -->
+            <div class="bento-box col-2">
+                <div class="box-header">
+                    <i data-lucide="graduation-cap" class="icon green-icon"></i>
+                    <span data-translate="content.bento.currentstudies.title">Current Studies</span>
+                </div>
+                <div class="box-content" data-translate="content.bento.currentstudies.content">
+                    Software Architect Apprentice at <a
+                        href="https://openclassrooms.com/fr/paths/749-architecte-logiciel" target="_blank"
+                        rel="noopener">OpenClassrooms</a>.
+                </div>
+            </div>
 
 
-    <div class="bento">
+            <!-- Hard Skills -->
+            <div class="bento-box col-2">
+                <div class="box-header">
+                    <i data-lucide="code-2" class="icon orange-icon"></i>
+                    <span data-translate="content.bento.hardskills.title">Hard skills</span>
+                </div>
+                <div class="box-content skills-container" data-translate="content.bento.hardskills.content">
+                    <span class="skill-tag">Backend Developpment (Ktor, Symfony, Golang)</span>
+                    <span class="skill-tag">Data Querying (SQL, ElasticSearch)</span>
+                    <span class="skill-tag">Frontend Developpement (React JS, Vanilla JS)</span>
+                </div>
+            </div>
+            
 
-        <!-- About me -->
-        <div class="box col-2">
-            <span class="box__title" data-translate="content.bento.aboutme.title">About Me</span>
-            <div class="box__content" data-translate="content.bento.aboutme.content">
-                I’m Bastien GRISVARD, a Software Architect Apprentice at Raccourci Agency and currently training at
-                OpenClassrooms.
-                After earning my <strong>BUT Informatique</strong> (Application Development – Design, Development, and
-                Validation), I chose to specialize in designing robust and scalable software architectures.
+            <!-- Github -->
+            <div class="bento-box social-box">
+                <a class="box-content social-link" target="_blank" href="https://github.com/Bastien2203" rel="noopener"
+                    aria-label="GitHub profile">
+                    <i data-lucide="github" class="social-icon"></i>
+                    <span data-translate="content.links.github">GitHub</span>
+                </a>
+            </div>
+            
+            <!-- Mail -->
+            <div class="bento-box social-box">
+                <a class="box-content social-link" target="_blank" title="bastiengrisvard2203@gmail.com"
+                    href="mailto:bastiengrisvard2203@gmail.com" rel="noopener" aria-label="Send email">
+                    <i data-lucide="mail" class="social-icon"></i>
+                    <span data-translate="content.links.email">Mail</span>
+                </a>
+            </div>
+
+            <!-- La Rochelle weather -->
+            <div class="bento-box weather-box">
+                <div class="box-header">
+                    <i data-lucide="map-pin" class="icon teal-icon"></i>
+                    <span data-translate="content.bento.livingin">Living in</span>
+                </div>
+                <div class="box-content weather-content">
+                    <span class="location">La Rochelle</span>
+                    <div id="temperature" class="temperature">
+                        <i data-lucide="loader-2" class="loading-icon"></i>
+                    </div>
+                </div>
+            </div>
+
+
+              
+            <!-- Soft Skills -->
+            <div class="bento-box">
+                <div class="box-header">
+                    <i data-lucide="users" class="icon pink-icon"></i>
+                    <span data-translate="content.bento.softskills.title">Soft skills</span>
+                </div>
+                <div class="box-content skills-container" data-translate="content.bento.softskills.content">
+                    <span class="skill-tag">Teamwork</span>
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Adaptability</span>
+                </div>
             </div>
         </div>
+    </main>
 
-        <!-- Picture -->
-        <div class="box">
-            <div class="box__content profile-picture">
-                <img src="bastien.jpeg" alt="Bastien Grisvard" loading="lazy"/>
-            </div>
-        </div>
+    <footer>
+        <p>
+            Made with <span class="heart">❤️</span> by
+            <a href="mailto:bastiengrisvard2203@gmail.com" target="_blank" rel="noopener">Bastien GRISVARD</a>
+            - 2025
+        </p>
+    </footer>
 
-        <!-- LinkedIn -->
-        <div class="box">
-            <a class="box__content" target="_blank" href="https://www.linkedin.com/in/bastien-grisvard-b74379253/"
-               aria-label="LinkedIn profile">
-                <img src="linkedin.svg" alt="LinkedIn logo" loading="lazy"/>
-                <span data-translate="content.links.linkedin">LinkedIn</span>
-            </a>
-        </div>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
 
-        <!-- Current job -->
-        <div class="box col-2">
-            <span class="box__title" data-translate="content.bento.currentjob.title">
-                Current Job
-            </span>
-            <div class="box__content" data-translate="content.bento.currentjob.content">
-                Sofware Architect Apprentice at <a href="https://raccourci.fr" target="_blank" rel="noopener">Raccourci
-                Agency</a>,
-                working with Kotlin (Ktor), and Elasticsearch.
-            </div>
-        </div>
+        // Theme switcher functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        
 
-        <!-- Current studies -->
-        <div class="box col-2">
-            <span class="box__title" data-translate="content.bento.currentstudies.title">
-                Current Studies
-            </span>
-            <div class="box__content" data-translate="content.bento.currentstudies.content">
-                Software Architect Apprentice at <a href="https://openclassrooms.com/fr/paths/749-architecte-logiciel"
-                                                    target="_blank" rel="noopener">OpenClassrooms</a>.
-            </div>
-        </div>
+        const setTheme = (theme) => {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+        };
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            setTheme(savedTheme);
+        } else {
+            setTheme(prefersDarkScheme.matches ? 'dark' : 'light');
+        }
+        
 
-        <!-- Github -->
-        <div class="box">
-            <a class="box__content" target="_blank" href="https://github.com/Bastien2203" rel="noopener"
-               aria-label="GitHub profile">
-                <img src="github-mark.svg" alt="GitHub logo" loading="lazy"/>
-                <span data-translate="content.links.github">GitHub</span>
-            </a>
-        </div>
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+        });
+        
 
-        <!-- Mail -->
-        <div class="box">
-            <a class="box__content"
-               target="_blank"
-               title="bastiengrisvard2203@gmail.com"
-               href="mailto:bastiengrisvard2203@gmail.com"
-               rel="noopener"
-               aria-label="Send email">
-                <img src="email.svg" alt="Email icon" loading="lazy"/>
-                <span data-translate="content.links.email">Mail</span>
-            </a>
-        </div>
+        prefersDarkScheme.addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                setTheme(e.matches ? 'dark' : 'light');
+            }
+        });
 
-        <!-- La Rochelle weather -->
-        <div class="box col-1">
-            <span class="box__title" data-translate="content.bento.livingin">Living in</span>
-            <div class="box__content flex-col-center gap-1">
-                La Rochelle
-            <div id="temperature"></div>
-            </div>
-        </div>
-       
-    </div>
+        // Fetch weather data
+        async function fetchWeather() {
+            try {
+                const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=46.166667&longitude=-1.150000&current=temperature_2m");
+                const data = await response.json();
 
-</main>
-<footer>
-    <p>
-        Made with ❤️ by
-        <a href="mailto:bastiengrisvard2203@gmail.com" target="_blank" rel="noopener">Bastien GRISVARD</a>
-        - 2025
-    </p>
-</footer>
+                const tempElement = document.getElementById("temperature");
+                if (tempElement) {
+                    const temp = data.current.temperature_2m;
+                    let weatherIcon = 'sun';
 
-<script>
-    fetch("https://api.open-meteo.com/v1/forecast?latitude=46.166667&longitude=-1.150000&current=temperature_2m").then(res => res.json()).then(data => {
-        document.getElementById("temperature").innerText = "🌡️" + data.current.temperature_2m + "°C";
-    });
-</script>
+                    if (temp < 10) {
+                        weatherIcon = 'cloud-snow';
+                    } else if (temp < 15) {
+                        weatherIcon = 'cloud';
+                    } else if (temp < 25) {
+                        weatherIcon = 'sun';
+                    } else {
+                        weatherIcon = 'sun';
+                    }
+
+                    tempElement.innerHTML = `
+                        <i data-lucide="${weatherIcon}" class="weather-icon"></i>
+                        <span>${temp}°C</span>
+                    `;
+
+                    lucide.createIcons();
+                }
+            } catch (error) {
+                console.error("Error fetching weather data:", error);
+                const tempElement = document.getElementById("temperature");
+                if (tempElement) {
+                    tempElement.innerHTML = `<span>Weather unavailable</span>`;
+                }
+            }
+        }
+
+        fetchWeather();
+
+
+        
+        // Add subtle animations on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const bentoBoxes = document.querySelectorAll('.bento-box');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            bentoBoxes.forEach(box => {
+                observer.observe(box);
+            });
+        });
+    </script>
 </body>
+
 </html>
