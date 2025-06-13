@@ -43,4 +43,14 @@ document.querySelectorAll('[data-translate]').forEach(el => {
   if (value) el.innerHTML = value;
 });
 
+
+document.querySelectorAll("#language-switcher>a").forEach(a => {
+  const href = a.getAttribute('href');
+  if (href == "/en" && lang === 'en') {
+    a.classList.add('active');
+  } else if (href == "/fr" && lang === 'fr') {
+    a.classList.add('active');
+  }
+})
+
 fs.writeFileSync(outputFile, dom.serialize());
