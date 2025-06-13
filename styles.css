@@ -344,9 +344,10 @@ main {
   .col-2 {
     grid-column: span 1;
   }
-.row-2 {
+
+  .row-2 {
     grid-row: span 1;
-}
+  }
 }
 
 .box-header {
@@ -557,6 +558,16 @@ footer p {
 
   .bento-grid {
     grid-template-columns: 1fr;
+  }
+
+  .profile-box{
+    display: none;
+  }
+
+
+  .weather-box,
+  .social-box {
+    aspect-ratio: auto;
   }
 }
 
